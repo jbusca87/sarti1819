@@ -7,7 +7,9 @@
     <body>
             <h1>Calculadora</h1>
             
-            <form action="" method="post"> ggfdsd
+            <form action="" method="post">
+
+            <option value=suma 
 
     </body>
 </html>    
