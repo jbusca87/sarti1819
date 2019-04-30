@@ -2,12 +2,12 @@
 session_start();
 $error="";
 if(isset($_REQUEST["submit"])){
-        if($_REQUEST["username"]=="username"){
-            $_SESSION["login"]=true;
-            $_SESSION["nom"]=$_REQUEST["username"];
-            header('Location:ejemplo_privado.php');           
-        }else{
-            $error="Usuario o contraseña incorrecta.";
+        if($_REQUEST["username"]=="USER" &&
+        $_REQUEST["passsword"]=="PASSWORD"){
+            header('Location:ejercicio5.privado.php'); 
+        }
+            
+           
         }
 }
 ?>
@@ -23,7 +23,7 @@ if(isset($_REQUEST["submit"])){
                 <h1>Registrate</h1>
             </header> 
 
-            <form action="registrar-usuario.php" method="post"> 
+            <form action="password.php" method="post"> 
                 <hr />
 
                 <h3>Crea una cuenta</h3>
@@ -31,7 +31,7 @@ if(isset($_REQUEST["submit"])){
 
                 <label for="nombre">Nombre de Usuario:</label><br>
 
-                <input type="text" name="username" maxlength="32" required>
+                <input type="text" submit="name" value="env">
 
                 <br/><br/>
 
